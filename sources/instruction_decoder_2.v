@@ -34,7 +34,7 @@ always @(*) begin : instruction_decoder
         pop         = 1'b0;
         a_mux_sel   = 2'b10;
         b_mux_sel   = 2'b10;
-        oen         = 1'b1; 
+        oen         = 1'b0; 
         pc_mux_sel  = 1'b1; 
         inc         = 1'b0; 
         src_sel     = 1'b0;
@@ -141,7 +141,7 @@ always @(*) begin : instruction_decoder
                         pop         = 1'b0;
                         a_mux_sel   = 2'b10;
                         b_mux_sel   = 2'b10;
-                        oen         = 1'b1; 
+                        oen         = 1'b0; 
                         pc_mux_sel  = 1'b1; 
                         inc         = 1'b0; 
                         src_sel     = 1'b0;
