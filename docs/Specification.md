@@ -121,3 +121,4 @@ When the module does not receive a valid identification code, the following beha
 1. The 5-bit `instr_in` (opcode), `cc_in`, and `instr_en` bits must be considered in the case expression to generate control signals. Considering any one of these alone to generate control signals is incorrect.
 2. There will be an increment of the stack pointer during a stack write.
 3. When the program counter is selected for an increment operation, `pc_mux_sel` will have a value of `1` unless explicitly stated otherwise.
+4. Review the symmetry between the Global Disable and the Local Disable. While they operate at different hierarchy levels, their effect on the Program Counter's control interface (not just the data incrementer) must be identical.
